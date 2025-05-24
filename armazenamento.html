@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diferenças entre Bytes, Megas, Gigas e Bits</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #4CAF50;
+        }
+        ul {
+            line-height: 1.8;
+        }
+        .content-section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .content-section ul {
+            margin-left: 20px;
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Diferenças entre Bytes, Megabytes, Gigabytes e Bits</h1>
+    <p>Entenda as unidades de armazenamento e como funcionam os cálculos entre elas.</p>
+</header>
+
+<main>
+    <section class="content-section">
+        <h2>O que são Bits e Bytes?</h2>
+        <p>
+            As unidades de armazenamento em computação são baseadas no sistema binário, que utiliza **bits** e **bytes**. 
+            Vamos começar entendendo o que são essas unidades:
+        </p>
+        <ul>
+            <li><strong>Bit (b):</strong> O <strong>bit</strong> (dígito binário) é a unidade mais simples de armazenamento. Ele pode ter apenas dois valores: <strong>0</strong> ou <strong>1</strong>.</li>
+            <li><strong>Byte (B):</strong> Um <strong>byte</strong> é composto por 8 bits. Ou seja, um byte pode representar 256 valores diferentes (de 0 a 255).</li>
+        </ul>
+    </section>
+
+    <section class="content-section">
+        <h2>Como Funcionam os Cálculos entre Bits e Bytes?</h2>
+        <p>
+            Um byte (B) é igual a 8 bits. Agora, vamos ver a relação entre outras unidades de armazenamento:
+        </p>
+        <ul>
+            <li><strong>1 byte = 8 bits</strong></li>
+            <li><strong>1 kilobyte (KB) = 1.024 bytes</strong></li>
+            <li><strong>1 megabyte (MB) = 1.024 kilobytes (KB)</strong></li>
+            <li><strong>1 gigabyte (GB) = 1.024 megabytes (MB)</strong></li>
+            <li><strong>1 terabyte (TB) = 1.024 gigabytes (GB)</strong></li>
+            <li><strong>1 petabyte (PB) = 1.024 terabytes (TB)</strong></li>
+        </ul>
+    </section>
+
+    <section class="content-section">
+        <h2>Exemplo Prático de Conversão</h2>
+        <p>
+            Vamos entender como fazer algumas conversões comuns entre as unidades de armazenamento:
+        </p>
+        <ul>
+            <li><strong>1 byte = 8 bits.</strong> Se você tiver um arquivo de 1 byte, ele tem 8 bits.</li>
+            <li><strong>1 kilobyte (KB) = 1.024 bytes.</strong> Para converter KB para bytes, multiplique o número de KB por 1.024. Exemplo: <strong>2 KB = 2 * 1.024 = 2.048 bytes.</strong></li>
+            <li><strong>1 megabyte (MB) = 1.024 kilobytes (KB).</strong> Para converter MB para KB, multiplique o número de MB por 1.024. Exemplo: <strong>5 MB = 5 * 1.024 = 5.120 KB.</strong></li>
+            <li><strong>1 gigabyte (GB) = 1.024 megabytes (MB).</strong> Para converter GB para MB, multiplique o número de GB por 1.024. Exemplo: <strong>3 GB = 3 * 1.024 = 3.072 MB.</strong></li>
+        </ul>
+    </section>
+
+    <section class="content-section">
+        <h2>Exemplos de Cálculos</h2>
+        <p>Agora, vamos trabalhar com alguns exemplos de cálculos para entender melhor as conversões entre as unidades:</p>
+        <h3>1. Convertendo Bits para Bytes</h3>
+        <p>Se você tiver um arquivo com 4.096 bits, quantos bytes ele representa?</p>
+        <p>Como sabemos, 1 byte = 8 bits. Para converter de bits para bytes, basta dividir o número de bits por 8:</p>
+        <pre>4.096 bits ÷ 8 = 512 bytes</pre>
+        <p>Portanto, 4.096 bits são equivalentes a 512 bytes.</p>
+
+        <h3>2. Convertendo Kilobytes (KB) para Megabytes (MB)</h3>
+        <p>Se você tiver um arquivo de 5.120 KB, quantos megabytes ele representa?</p>
+        <p>Sabemos que 1 MB = 1.024 KB. Então, para converter de KB para MB, basta dividir o número de KB por 1.024:</p>
+        <pre>5.120 KB ÷ 1.024 = 5 MB</pre>
+        <p>Portanto, 5.120 KB são equivalentes a 5 MB.</p>
+
+        <h3>3. Convertendo Megabytes (MB) para Gigabytes (GB)</h3>
+        <p>Se você tiver um arquivo de 2.048 MB, quantos gigabytes ele representa?</p>
+        <p>Sabemos que 1 GB = 1.024 MB. Para converter de MB para GB, basta dividir o número de MB por 1.024:</p>
+        <pre>2.048 MB ÷ 1.024 = 2 GB</pre>
+        <p>Portanto, 2.048 MB são equivalentes a 2 GB.</p>
+
+        <h3>4. Convertendo Gigabytes (GB) para Terabytes (TB)</h3>
+        <p>Se você tiver um arquivo de 3.072 GB, quantos terabytes ele representa?</p>
+        <p>Sabemos que 1 TB = 1.024 GB. Para converter de GB para TB, basta dividir o número de GB por 1.024:</p>
+        <pre>3.072 GB ÷ 1.024 = 3 TB</pre>
+        <p>Portanto, 3.072 GB são equivalentes a 3 TB.</p>
+    </section>
+
+    <section class="content-section">
+        <h2>Equivalências Comuns de Armazenamento</h2>
+        <p>
+            Aqui estão algumas equivalências para ajudá-lo a entender as dimensões do armazenamento de dados em unidades mais familiares:
+        </p>
+        <ul>
+            <li><strong>1 byte:</strong> Pode armazenar um único caractere de texto, como a letra "A".</li>
+            <li><strong>1 kilobyte (KB):</strong> Aproximadamente o tamanho de uma página de texto em um arquivo simples.</li>
+            <li><strong>1 megabyte (MB):</strong> Aproximadamente o tamanho de uma foto de alta resolução ou uma música compactada.</li>
+            <li><strong>1 gigabyte (GB):</strong> Aproximadamente o tamanho de uma hora de vídeo em alta definição.</li>
+            <li><strong>1 terabyte (TB):</strong> Aproximadamente o tamanho de 1.000 músicas de alta qualidade ou centenas de horas de vídeo em baixa resolução.</li>
+        </ul>
+    </section>
+
+    <section class="content-section">
+        <h2>Por Que as Unidades de Armazenamento São Baseadas em Potências de 2?</h2>
+        <p>
+            As unidades de armazenamento em computação são baseadas em potências de 2 porque os computadores funcionam com o sistema binário. O sistema binário é composto apenas por 0s e 1s, o que corresponde ao comportamento dos transistores (ligado ou desligado) dentro do processador.
+        </p>
+        <p>
+            Portanto, as unidades de armazenamento são multiplicadas por 1.024 (que é 2<sup>10</sup>) em vez de 1.000, como ocorre em outras medições de unidade, como quilômetro, metro, etc. Por isso temos:
+        </p>
+        <ul>
+            <li><strong>1 kilobyte = 1.024 bytes</strong></li>
+            <li><strong>1 megabyte = 1.024 kilobytes</strong></li>
+            <li><strong>1 gigabyte = 1.024 megabytes</strong></li>
+        </ul>
+    </section>
+
+    <section class="content-section">
+        <h2>Resumo das Diferenças e Conversões</h2>
+        <ul>
+            <li><strong>1 byte = 8 bits</strong></li>
+            <li><strong>1 kilobyte (KB) = 1.024 bytes</strong></li>
+            <li><strong>1 megabyte (MB) = 1.024 kilobytes (KB)</strong></li>
+            <li><strong>1 gigabyte (GB) = 1.024 megabytes (MB)</strong></li>
+            <li><strong>1 terabyte (TB) = 1.024 gigabytes (GB)</strong></li>
+            <li><strong>1 petabyte (PB) = 1.024 terabytes (TB)</strong></li>
+        </ul>
+        <p>
+            Esses cálculos e conversões são essenciais para compreender como os dados são armazenados e manipulados nos sistemas de computação, além de ajudar na organização e no dimensionamento de recursos em redes e sistemas de armazenamento.
+        </p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Diferenças entre Bytes, Megas, Gigas e Bits - Explicação Simples</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula sobre Modelos OSI e TCP/IP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #4CAF50;
+        }
+        ul {
+            line-height: 1.8;
+        }
+        .content-section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .content-section ul {
+            margin-left: 20px;
+        }
+        .analogies {
+            background-color: #e9f7ef;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Aula sobre Modelos OSI e TCP/IP</h1>
+    <p>Como a comunicação em rede funciona</p>
+</header>
+
+<main>
+    <section class="content-section">
+        <h2>Para que serve a comunicação em rede?</h2>
+        <p>
+            Quando você usa a internet para assistir desenhos, jogar ou conversar com seus amigos, muitos dados estão sendo enviados de um lugar para o outro.
+        </p>
+        <p>
+            Mas, para que esses dados cheguem corretamente, os computadores e celulares precisam seguir <strong>regras</strong>. Essas regras são chamadas de <strong>Modelos OSI e TCP/IP</strong>. Elas dizem como os dados devem viajar para chegar no lugar certo e não se perderem no caminho.
+        </p>
+        <p>
+            Esses modelos ajudam os computadores a "conversar" de maneira certa e sem erros. É como se fossem as regras de um jogo para que todo mundo jogue da mesma forma.
+        </p>
+    </section>
+
+    <section class="content-section">
+        <h2>O que são os Modelos OSI e TCP/IP?</h2>
+        <p>
+            O <strong>Modelo OSI</strong> é um modelo que mostra como os dados devem ser enviados entre computadores. Ele é como um guia que ensina como os dados devem ser organizados para viajarem direitinho. Ele tem <strong>7 camadas</strong>, e cada camada tem uma função diferente.
+        </p>
+        <p>
+            O <strong>Modelo TCP/IP</strong> é um modelo mais simples e usado na prática, ou seja, é o que usamos de verdade para a internet funcionar. Ele tem <strong>4 camadas</strong>, e também ajuda a organizar o envio dos dados.
+        </p>
+        <p>
+            Ambos os modelos ajudam os computadores a se entenderem e trabalharem juntos, assim como quando você e seus amigos jogam um jogo juntos, cada um seguindo as mesmas regras.
+        </p>
+    </section>
+
+    <section class="content-section">
+        <h2>Comparação das Camadas: OSI vs TCP/IP</h2>
+        <table border="1" cellpadding="10" cellspacing="0" style="width:100%; margin-top: 20px; border-collapse: collapse;">
+            <tr>
+                <th>Camada OSI</th>
+                <th>Camada TCP/IP</th>
+                <th>O que ela faz?</th>
+            </tr>
+            <tr>
+                <td>7. Aplicação</td>
+                <td>4. Aplicação</td>
+                <td>É onde você interage com o computador, como quando abre um site ou manda um e-mail.</td>
+            </tr>
+            <tr>
+                <td>6. Apresentação</td>
+                <td>4. Aplicação</td>
+                <td>Ajuda a organizar e traduzir os dados, como quando você traduz uma história de outro idioma.</td>
+            </tr>
+            <tr>
+                <td>5. Sessão</td>
+                <td>4. Aplicação</td>
+                <td>Ela mantém a conversa entre os computadores, para que eles não "se percam" durante o processo.</td>
+            </tr>
+            <tr>
+                <td>4. Transporte</td>
+                <td>3. Transporte</td>
+                <td>Garante que os dados cheguem de forma segura, como um entregador cuidando da sua encomenda.</td>
+            </tr>
+            <tr>
+                <td>3. Rede</td>
+                <td>2. Internet</td>
+                <td>Decide o caminho que os dados devem seguir, como se fosse um GPS para os dados.</td>
+            </tr>
+            <tr>
+                <td>2. Enlace de Dados</td>
+                <td>1. Acesso à Rede</td>
+                <td>Cuida da organização dos dados, como quando a caixa da encomenda está bem fechada e protegida.</td>
+            </tr>
+            <tr>
+                <td>1. Física</td>
+                <td>1. Acesso à Rede</td>
+                <td>É o meio físico onde os dados viajam, como fios, cabos ou até Wi-Fi.</td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="content-section">
+        <h2>Detalhamento da Função dos Protocolos em Cada Camada</h2>
+        <h3>1. Camada Física</h3>
+        <ul>
+            <li><strong>Ethernet</strong> - Na Camada Física, o Ethernet se refere ao <strong>cabo físico</strong> (como o cabo de rede <strong>RJ45</strong>) ou ao <strong>sinal transmitido</strong> pelo fio, que permite que os dados "viajem" de um computador para outro. É como se fosse a estrada por onde os dados viajam. Imagine um caminho concreto que conecta dois lugares. O <strong>Ethernet</strong> aqui é literalmente a estrada para os dados.</li>
+            <li><strong>Wi-Fi</strong> - Usado para redes sem fio, como quando você usa o Wi-Fi do seu celular.</li>
+            <li><strong>USB</strong> - Usado para conectar dispositivos, como quando você conecta um pen drive no computador.</li>
+            <li><strong>Bluetooth</strong> - Usado para conectar aparelhos perto de você, como fones de ouvido sem fio.</li>
+        </ul>
+
+        <h3>2. Camada de Enlace de Dados</h3>
+        <ul>
+            <li><strong>Ethernet</strong> - Já na <strong>Camada de Enlace de Dados</strong>, o <strong>Ethernet</strong> tem uma função diferente. Em vez de apenas transmitir os dados, ele ajuda a garantir que os dados enviados cheguem corretamente e sem erros. Ele organiza os dados em <strong>pacotes</strong> chamados <strong>quadros</strong> e garante que esses pacotes cheguem ao destino certo, sem problemas. Ele também verifica se os dados estão sendo enviados sem problemas e pode corrigir problemas simples, como <strong>conflitos</strong> ou <strong>erros de transmissão</strong>.</li>
+            <li><strong>PPP (Point-to-Point Protocol)</strong> - Usado para conexões diretas entre dois computadores, como uma linha de comunicação direta.</li>
+            <li><strong>Frame Relay</strong> - Usado para enviar dados entre diferentes pontos, garantindo que os dados <strong>não se percam</strong> no caminho.</li>
+            <li><strong>HDLC (High-Level Data Link Control)</strong> - Usado em sistemas de alta velocidade para <strong>organizar e controlar os dados</strong>, garantindo que eles sejam transmitidos rapidamente.</li>
+        </ul>
+
+        <h3>3. Camada de Rede</h3>
+        <ul>
+            <li><strong>IP (Internet Protocol)</strong> - Ajuda a enviar os dados para o lugar certo. Como um endereço postal que diz onde uma carta deve ir.</li>
+            <li><strong>ICMP (Internet Control Message Protocol)</strong> - Usado para enviar mensagens de controle, como quando você usa o <strong>ping</strong> para saber se a internet está funcionando.</li>
+            <li><strong>ARP (Address Resolution Protocol)</strong> - Usado para descobrir o endereço físico de um computador dentro de uma rede.</li>
+        </ul>
+
+        <h3>4. Camada de Transporte</h3>
+        <ul>
+            <li><strong>TCP (Transmission Control Protocol)</strong> - Garante que os dados cheguem sem falhas, como um entregador que cuida da sua encomenda para que ela não quebre.</li>
+            <li><strong>UDP (User Datagram Protocol)</strong> - Usado quando a velocidade é mais importante que a confiabilidade, como quando você assiste um vídeo ao vivo.</li>
+        </ul>
+
+        <h3>5. Camada de Sessão</h3>
+        <ul>
+            <li><strong>RDP (Remote Desktop Protocol)</strong> - Usado para acessar um computador à distância, como quando você usa o computador da escola em casa.</li>
+        </ul>
+
+        <h3>6. Camada de Apresentação</h3>
+        <ul>
+            <li><strong>SSL/TLS (Secure Sockets Layer / Transport Layer Security)</strong> - Protege os dados quando você acessa um site seguro, como uma chave que guarda suas informações bancárias.</li>
+            <li><strong>JPEG, GIF, PNG</strong> - Formatos usados para comprimir e mostrar imagens.</li>
+        </ul>
+
+        <h3>7. Camada de Aplicação</h3>
+        <ul>
+            <li><strong>HTTP (HyperText Transfer Protocol)</strong> - Usado para carregar páginas de internet, como quando você abre um site.</li>
+            <li><strong>FTP (File Transfer Protocol)</strong> - Usado para transferir arquivos pela internet, como quando você manda um arquivo para um amigo.</li>
+            <li><strong>SMTP (Simple Mail Transfer Protocol)</strong> - Usado para enviar e-mails.</li>
+            <li><strong>DNS (Domain Name System)</strong> - Traduz nomes de sites (como <strong>google.com</strong>) para números que o computador entende.</li>
+        </ul>
+    </section>
+
+    <section class="content-section analogies">
+    <h3>Analogias com a Vida Real - Modelo TCP/IP</h3>
+    <p>Vamos usar uma analogia com o envio de uma carta para entender melhor as camadas do <strong>Modelo TCP/IP</strong>:</p>
+    <ul>
+        <li><strong>Camada de Acesso à Rede</strong>: Imagine a estrada por onde a carta viaja, seja por caminhões, aviões ou carros. Isso é como o meio físico (cabos, Wi-Fi, etc.) que transporta a carta (dados) até o destino.</li>
+        <li><strong>Camada de Internet</strong>: O correio que decide qual caminho a carta vai seguir até chegar ao destino. Assim como um sistema de entrega decide qual o melhor caminho, a <strong>Camada de Internet</strong> usa o protocolo <strong>IP</strong> para determinar o caminho dos dados.</li>
+        <li><strong>Camada de Transporte</strong>: A verificação para garantir que a carta chegou sem rasuras ou problemas. A <strong>Camada de Transporte</strong>, com o protocolo <strong>TCP</strong>, garante que todos os dados sejam entregues corretamente, como um entregador que confirma que a encomenda chegou inteira e sem falhas.</li>
+        <li><strong>Camada de Aplicação</strong>: O conteúdo real da carta, que é a mensagem que você quer enviar. Na <strong>Camada de Aplicação</strong>, você tem os protocolos como <strong>HTTP</strong> (para navegar na web) ou <strong>SMTP</strong> (para enviar e-mails), que são como o que você escreve na carta, ou seja, a informação real que está sendo trocada entre os computadores.</li>
+    </ul>
+</section>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 Modelos OSI e TCP/IP - Aula de Redes</p>
+</footer>
+
+</body>
+</html>

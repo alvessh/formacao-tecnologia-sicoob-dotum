@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infraestrutura de TI - Endereçamento IP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #4CAF50;
+        }
+        ul {
+            line-height: 1.8;
+        }
+        .content-section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .content-section ul {
+            margin-left: 20px;
+        }
+        .analogies {
+            background-color: #e9f7ef;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Infraestrutura de TI - Endereçamento IP</h1>
+    <p>Entenda os conceitos de IPv4 e IPv6 e como o endereçamento IP funciona na internet</p>
+</header>
+
+<main>
+    <section class="content-section">
+        <h2>O que é um Endereço IP?</h2>
+        <p>
+            Um endereço IP (Protocolo de Internet) é como um <strong>endereço de casa</strong>, mas para os computadores e outros dispositivos conectados à internet.
+        </p>
+        <p>
+            Assim como você tem um endereço em sua casa para receber cartas, cada computador ou dispositivo na internet tem um endereço IP para poder se comunicar com outros dispositivos. Sem esse endereço, o computador não saberia como enviar ou receber informações da internet.
+        </p>
+        <p>
+            Existem dois tipos de endereços IP:
+        </p>
+        <ul>
+            <li><strong>IPv4:</strong> Um endereço IP comum que usa números de 0 a 255. Ele é mais simples, mas tem menos opções disponíveis, o que significa que, às vezes, não é suficiente para todos os dispositivos da internet.</li>
+            <li><strong>IPv6:</strong> Uma versão mais nova do endereço IP, com mais combinações de números, para garantir que sempre teremos endereços suficientes para todos os dispositivos conectados à internet no futuro.</li>
+        </ul>
+    </section>
+
+    <section class="content-section">
+        <h2>O que é um Byte?</h2>
+        <p>
+            Um <strong>byte</strong> é uma unidade de armazenamento que é formada por 8 <strong>bits</strong>. Ou seja, um byte é composto por 8 "dígitos binários" que podem ser 0 ou 1.
+        </p>
+        <p>
+            Cada bit, como já explicamos, é um valor binário que pode ser 0 ou 1. Quando juntamos 8 bits, formamos um byte. Isso é muito importante porque os computadores usam bytes para armazenar e manipular informações.
+        </p>
+        <h3>Exemplo de um Byte</h3>
+        <p>
+            Vamos imaginar que cada bit é como uma lâmpada que pode estar <strong>desligada (0)</strong> ou <strong>ligada (1)</strong>. Quando você junta 8 lâmpadas, você tem um byte. E como cada lâmpada pode ter duas opções (ligada ou desligada), o número total de combinações possíveis para essas 8 lâmpadas é 256 (de 0 a 255).
+        </p>
+        <p>
+            Isso significa que um byte pode representar qualquer número de 0 a 255, o que é suficiente para representar muitas informações, como uma letra, um número ou até um símbolo.
+        </p>
+    </section>
+
+    <section class="content-section">
+        <h2>Conversão de Binário para Decimal: Exemplo com 10011101</h2>
+        <p>
+            Agora, vamos converter o número binário <strong>10011101</strong> para decimal. O processo é semelhante ao que explicamos, onde somamos as potências de 2 para os bits que estão ligados (1).
+        </p>
+        <h3>Passo a passo do cálculo:</h3>
+        <p>
+            O número binário <strong>10011101</strong> tem 8 bits. Vamos atribuir as potências de 2 para cada bit, de acordo com a posição do bit:
+        </p>
+        <ul>
+            <li>2<sup>7</sup> = 128 (Bit 1)</li>
+            <li>2<sup>6</sup> = 64 (Bit 2)</li>
+            <li>2<sup>5</sup> = 32 (Bit 3)</li>
+            <li>2<sup>4</sup> = 16 (Bit 4)</li>
+            <li>2<sup>3</sup> = 8  (Bit 5)</li>
+            <li>2<sup>2</sup> = 4  (Bit 6)</li>
+            <li>2<sup>1</sup> = 2  (Bit 7)</li>
+            <li>2<sup>0</sup> = 1  (Bit 8)</li>
+        </ul>
+        <p>
+            O número binário <strong>10011101</strong> é representado como:
+        </p>
+        <p>
+            <strong>10011101</strong> em binário significa:
+        </p>
+        <ul>
+            <li>1 * 128 = 128</li>
+            <li>0 * 64 = 0</li>
+            <li>0 * 32 = 0</li>
+            <li>1 * 16 = 16</li>
+            <li>1 * 8 = 8</li>
+            <li>1 * 4 = 4</li>
+            <li>0 * 2 = 0</li>
+            <li>1 * 1 = 1</li>
+        </ul>
+        <p>
+            Somando os resultados: <strong>128 + 16 + 8 + 4 + 1 = 157</strong>.
+        </p>
+        <p>
+            Portanto, o número binário <strong>10011101</strong> é igual a <strong>157</strong> em decimal.
+        </p>
+    </section>
+
+    <section class="content-section">
+        <h2>Detalhando o IPv4</h2>
+        <p>
+            O <strong>IPv4</strong> (Protocolo de Internet versão 4) é o tipo mais comum de endereço IP que usamos hoje. Ele é formado por 4 grupos de números, que vão de 0 a 255, separados por pontos. Cada grupo de números é chamado de <strong>octeto</strong>, e tem 8 bits (por isso o nome IPv4, já que são 32 bits no total).
+        </p>
+        <h3>Exemplo de um endereço IPv4:</h3>
+        <p><strong>192.168.1.1</strong></p>
+        <p>
+            Esse endereço IPv4 é composto por 4 números, chamados de octetos. Cada número é representado por 8 bits, ou seja, 1 byte. No total, temos 32 bits (4 bytes) para formar um endereço IPv4.
+        </p>
+        <h3>Como funciona o cálculo do IPv4?</h3>
+        <p>
+            Cada um dos 4 octetos pode ter um valor entre 0 e 255, porque com 8 bits podemos representar 256 números (de 0 a 255). O número máximo que um octeto pode ter é 255, porque 255 é o maior número que pode ser representado com 8 bits.
+        </p>
+        <p>
+            Se você pensar em cada octeto como uma "caixinha" de 8 bits, dentro de cada caixinha você pode colocar números de 0 a 255. O IPv4, por exemplo, tem 4 caixinhas, ou 4 octetos, que representam o endereço completo.
+        </p>
+        
+        <h3>Endereços Privados no IPv4</h3>
+        <p>
+            Os endereços privados no IPv4 foram criados para uso interno de redes, como em casas ou empresas. Eles não são acessíveis diretamente pela internet. Essa criação ajudou a preservar o espaço de endereços públicos, já que muitas redes internas precisam de seus próprios endereços IPs sem ocupar um endereço público.
+        </p>
+        <p>
+            Exemplos de endereços IP privados são:
+        </p>
+        <ul>
+            <li><strong>10.0.0.0 a 10.255.255.255</strong></li>
+            <li><strong>172.16.0.0 a 172.31.255.255</strong></li>
+            <li><strong>192.168.0.0 a 192.168.255.255</strong></li>
+        </ul>
+        <p>
+            Esses endereços são usados em redes locais (como sua casa ou escritório). Eles são "privados" porque não são acessíveis diretamente da internet. Para acessar a internet, os dispositivos com esses endereços IP privados usam o <strong>roteador</strong>, que faz a "tradução" dos endereços para um endereço público, no processo chamado de <strong>Network Address Translation (NAT)</strong>.
+        </p>
+        
+        <h3>Máscara de Rede no IPv4</h3>
+        <p>
+            A <strong>máscara de rede</strong> é usada para dividir os endereços IP em duas partes: uma que representa a rede (onde os dispositivos estão conectados) e outra que representa o dispositivo individual dentro da rede. 
+        </p>
+        <p>
+            Por exemplo, em um endereço IP como <strong>192.168.1.1</strong>, a máscara de rede <strong>255.255.255.0</strong> indica que os três primeiros octetos (192.168.1) representam a rede, enquanto o último octeto (1) representa o dispositivo específico dentro da rede.
+        </p>
+        <p>
+            A máscara de rede ajuda o computador a entender se ele deve enviar uma informação para outro dispositivo dentro da mesma rede local ou se ele deve enviar para fora da rede, para a internet.
+        </p>
+        <h3>Exemplo de Máscara de Rede</h3>
+        <p>
+            Se o endereço IP de um dispositivo for <strong>192.168.1.5</strong> e a máscara de rede for <strong>255.255.255.0</strong>, isso significa que o endereço da rede é <strong>192.168.1.0</strong>, e o último número (o "5") identifica o dispositivo dentro dessa rede.
+        </p>
+
+        <h3>Endereço de Rede e Endereço de Broadcast</h3>
+        <p>
+            Dentro de uma rede, o <strong>endereço de rede</strong> e o <strong>endereço de broadcast</strong> são dois endereços especiais:
+        </p>
+        <ul>
+            <li><strong>Endereço de Rede:</strong> Este endereço é usado para identificar a rede em si. Ele é formado ao substituir todos os bits de host (últimos bits) por 0. Por exemplo, em uma rede com máscara <strong>/24</strong> (255.255.255.0), se o endereço for <strong>192.168.1.0</strong>, ele representa a rede inteira.</li>
+            <li><strong>Endereço de Broadcast:</strong> Este endereço é usado para enviar mensagens para todos os dispositivos na rede. Ele é formado substituindo todos os bits de host por 1. Em uma rede com máscara <strong>/24</strong>, o endereço de broadcast seria <strong>192.168.1.255</strong>.</li>
+        </ul>
+        <p>
+            Para uma rede com máscara de rede <strong>/24</strong> (255.255.255.0), temos <strong>254 endereços disponíveis para dispositivos</strong> (de 192.168.1.1 até 192.168.1.254). O primeiro endereço (192.168.1.0) é o endereço de rede, e o último (192.168.1.255) é o endereço de broadcast.
+        </p>
+        <h3>Como funciona o cálculo de rede e broadcast?</h3>
+        <p>
+            Quando usamos uma máscara de rede como <strong>/24</strong> (255.255.255.0), o primeiro endereço de IP (exemplo: 192.168.1.0) é o <strong>endereço de rede</strong>, que identifica a rede em si. Para calcular o <strong>endereço de broadcast</strong>, simplesmente substituímos os bits do <strong>host</strong> (últimos 8 bits na máscara /24) por 1s, ficando com <strong>192.168.1.255</strong>.
+        </p>
+    </section>
+
+     <section class="content-section">
+        <h2>Como 8 Bits Formam 255?</h2>
+        <p>
+            Quando falamos de 8 bits como `11111111`, o valor gerado é 255, pois cada bit tem um valor em potências de 2. O valor de cada bit vai de 2^0 a 2^7, e quando todos os bits estão ligados (ou seja, cada um é `1`), somamos todos esses valores.
+        </p>
+        <h3>Explicação do cálculo:</h3>
+        <p>
+            Os valores das potências de 2 para os 8 bits são:
+        </p>
+        <ul>
+            <li>2<sup>7</sup> = 128</li>
+            <li>2<sup>6</sup> = 64</li>
+            <li>2<sup>5</sup> = 32</li>
+            <li>2<sup>4</sup> = 16</li>
+            <li>2<sup>3</sup> = 8</li>
+            <li>2<sup>2</sup> = 4</li>
+            <li>2<sup>1</sup> = 2</li>
+            <li>2<sup>0</sup> = 1</li>
+        </ul>
+        <p>
+            Quando somamos todos os valores das potências de 2, temos:
+        </p>
+        <p>
+            128 + 64 + 32 + 16 + 8 + 4 + 2 + 1 = 255
+        </p>
+        <p>
+            Portanto, quando todos os 8 bits são iguais a `1` (`11111111`), o valor total é 255.
+        </p>
+    </section>
+
+    <section class="content-section">
+        <h2>Detalhando o IPv6</h2>
+        <p>
+            O <strong>IPv6</strong> é a versão mais recente do endereçamento IP e foi criado para resolver a limitação de endereços do IPv4. O IPv6 usa um sistema de endereços de 128 bits, o que permite uma quantidade muito maior de endereços.
+        </p>
+        <p>
+            O IPv6 é formado por 8 grupos de 4 dígitos hexadecimais, separados por dois pontos. Como o sistema é baseado em 128 bits, o número de endereços possíveis é extremamente grande, permitindo que todos os dispositivos conectados à internet tenham um endereço único.
+        </p>
+        <h3>Exemplo de um endereço IPv6:</h3>
+        <p><strong>2001:0db8:85a3:0000:0000:8a2e:0370:7334</strong></p>
+        <p>
+            Esse endereço IPv6 tem 8 grupos de 4 dígitos hexadecimais, onde cada grupo pode ter valores de 0 a F (de 0 a 15 no sistema hexadecimal). Isso permite uma gama de endereços muito maior que o IPv4.
+        </p>
+        <h3>Como funciona o cálculo do IPv6?</h3>
+        <p>
+            Como o IPv6 tem 128 bits, ele pode representar até <strong>340 undecillion</strong> (isso é um número gigante com 36 zeros!). Isso é o suficiente para garantir que nunca faltem endereços IP para dispositivos conectados à internet.
+        </p>
+        <h3>Máscara de Rede no IPv6</h3>
+        <p>
+            O IPv6 usa um formato de máscara de rede chamado <strong>prefixo de rede</strong>. Esse prefixo especifica quantos bits são usados para a parte de rede do endereço. Por exemplo, em um endereço IPv6 com prefixo <strong>/64</strong>, significa que os primeiros 64 bits são usados para identificar a rede, e os 64 bits restantes são usados para identificar dispositivos dentro dessa rede.
+        </p>
+    </section>
+
+    <section class="content-section">
+        <h3>Resumo</h3>
+        <ul>
+            <li><strong>IPv4</strong> usa 32 bits e tem 4 octetos. Ele está ficando sem endereços disponíveis, por isso o IPv6 foi criado.</li>
+            <li><strong>IPv6</strong> usa 128 bits e tem uma quantidade muito maior de endereços, resolvendo o problema de escassez do IPv4.</li>
+            <li><strong>IPs Privados</strong> são usados em redes internas e não podem ser acessados diretamente da internet. Para isso, usamos o <strong>roteador</strong> para conectar à internet.</li>
+            <li>A <strong>máscara de rede</strong> ajuda a dividir o endereço IP entre a rede e o dispositivo.</li>
+            <li>No IPv6, o <strong>prefixo de rede</strong> é usado para definir a parte de rede do endereço.</li>
+        </ul>
+    </section>
+
+    <section class="content-section">
+        <h3>Conclusão</h3>
+        <p>
+            O endereçamento IP é uma parte fundamental da internet, e entender como o IPv4 e o IPv6 funcionam é essencial para compreender como a comunicação entre dispositivos ocorre. O IPv6 foi criado para garantir que todos os dispositivos conectados à internet possam ter um endereço único e nunca fiquem sem espaço.
+        </p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Endereçamento IP - Explicação Simples</p>
+</footer>
+
+</body>
+</html>
